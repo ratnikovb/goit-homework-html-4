@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+body {
+    background: url(images/background.png) center/cover no-repeat;
+    font: 400 14px "Tahoma";
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    padding-top: 13px;
+}
+
+header {
+    padding: 0 45px 0 45px;
+}
+
+.main {
+    min-height: 991px;
+    width: 1018px;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 5px 3px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+}
+
+.main-menu {
+    background: #343434;
+    padding: 0 68px 0 68px;
+    /*    box-shadow: 2px 4px 5px 0.00px rgba(0, 0, 0, 0.75); */
+    /*    Отключил box shadow так как не получилось сдвинуть меню выше(в z-index) блока с колонками*/
+    z-index: 3;
+}
+
+.main-menu a {
+    color: #ffffff;
+}
+
+.main-menu-item {
+    display: inline-block;
+    position: relative;
+    padding: 9px 39px 9px 12px;
+}
+
+.main-menu-item a {}
+
+.submenu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    left: 0;
+    top: 35px;
+    padding: 10px;
+    background: #343434;
+    box-shadow: 0px 4px 5px 0.00px rgba(0, 0, 0, 0.75);
+}
+
+.tr:after {
+    content: "\25bc";
+    display: block;
+    position: absolute;
+    left: 77%;
+    top: 39%;
+    color: #ffffff;
+    font-size: 8px;
+}
+
+.submenu-item {
+    display: block;
+    padding-bottom: 15px;
+}
+
+.submenu-item a {
+    padding-bottom: 15px;
+}
+
+.main-menu-item:hover .submenu,
+.submenu-item:hover {
+    display: block;
+}
+
+.logo {
+    float: left;
+    position: relative
+}
+
+.logo p {
+    position: absolute;
+    top: 55%;
+    left: 20%;
+    font-size: 12px;
+    color: #128aa7;
+}
+
+.contacts p {
+    color: #128aa7;
+    font-size: 12px;
+}
+
+.contacts,
+.countries {
+    float: right;
+}
+
+.countries {
+    clear: right;
+}
+
+.country-item {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 10px;
+    text-decoration: underline;
+    vertical-align: bottom;
+    text-align: center;
+}
+
+.country-item p {
+    color: #128aa7;
+    text-decoration: underline;
+}
+
+.sprite {
+    background-image: url(images/spritesheet.png);
+    background-repeat: no-repeat;
+}
+
+.sprite-1,
+.sprite-2,
+.sprite-3,
+.sprite-4,
+.sprite-5,
+.sprite-6 {
+    width: 42px;
+    height: 42px;
+}
+
+.sprite-1 {
+    background-position: 0 0;
+}
+
+.sprite-2 {
+    background-position: -42px 0;
+}
+
+.sprite-3 {
+    background-position: -84px 0;
+}
+
+.sprite-4 {
+    background-position: -126px 0;
+}
+
+.sprite-5 {
+    background-position: -168px 0;
+}
+
+.sprite-6 {
+    background-position: -210px 0;
+}
+
+.poster-lg {
+    border-top: 1px solid #128aa7;
+    border-bottom: 1px solid #128aa7;
+}
+
+.poster-lg img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.content {
+    display: table;
+    z-index: -2;
+}
+
+.col-left,
+.col-center,
+.col-right {
+    display: table-cell;
+    vertical-align: top;
+    z-index: -5;
+}
+
+.col-left {
+    /*    float: left;*/
+}
+
+.col-right {
+    /*  float: right;*/
+}
+
+.col-center {
+    /*    float: left;*/
+    width: 58%;
+    box-sizing: border-box;
+}
+
+.col-left,
+.col-right {
+    width: 21%;
+    box-sizing: border-box;
+    padding: 14px;
+    border-left: 1px solid #c7cacf;
+    border-right: 1px solid #c7cacf;
+    background: #edeef0;
+}
+
+.col-left h4,
+.col-right h4 {
+    font-size: 18px;
+    text-align: center;
+}
+
+footer {
+    display: inline-block;
+}
+
+footer p {
+    text-align: center;
+}
